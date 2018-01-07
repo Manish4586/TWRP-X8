@@ -1,5 +1,5 @@
 # Inherit device configuration
-$(call inherit-product, device/Lava/IrisX8/device.mk)
+$(call inherit-product, device/Lava/IrisX8/device_IrisX8.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := irisX8
