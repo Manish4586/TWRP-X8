@@ -17,11 +17,11 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/Lava/IrisX8/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_DIR)/kernel
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_CUSTOM_BOOTIMG_MK := device/Lava/IrisX8/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_DIR)/mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 
 # USB Mounting
@@ -35,10 +35,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Device-Specific
 DEVICE_RESOLUTION := 720 x 1280
 TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 1920
+TARGET_SCREEN_WIDTH := 720
 
 # TWRP-Specific
-TARGET_RECOVERY_FSTAB := device/Lava/IrisX8/recovery/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/Lava/irisX8/recovery/etc/twrp.fstab
 BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_THEME := landspace_hdpi
