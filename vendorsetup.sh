@@ -1,1 +1,1 @@
-add_lunch_combo Lava_IrisX8-eng
+add_lunch_combo omni_irisX8-userdebug
