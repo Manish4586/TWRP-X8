@@ -61,6 +61,6 @@ TW_MAX_BRIGHTNESS := 255
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/twrp.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/etc/twrp.fstab:root/twrp.fstab
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/etc/recovery.fstab:root/recovery.fstab
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/etc/fstab.mt6592:root/fstab.mt6592
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/etc/recovery.fstab:recovery/root/etc/recovery.fstab
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/etc/fstab.mt6592:recovery/root/etc/fstab.mt6592
