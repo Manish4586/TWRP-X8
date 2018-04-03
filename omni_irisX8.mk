@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := irisX8
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \ 
-    $(LOCAL_PATH)/recovery/etc/recovery.fstab:root/recovery.fstab
+    $(LOCAL_PATH)/recovery/etc/recovery.fstab:recovery/root/recovery.fstab
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
